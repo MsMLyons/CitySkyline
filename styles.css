@@ -1,3 +1,14 @@
 * {
     border: 1px solid black;
+    box-sizing: border-box;
 }
+
+body {
+    /* make body fill whole viewport */
+    height: 100vh;
+    /* remove default margin */
+    margin: 0;
+    /* hide scroll bars that appear when something extends past viewport */
+    overflow: hidden;
+}
+
