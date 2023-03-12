@@ -12,3 +12,7 @@ body {
     overflow: hidden;
 }
 
+.background-buildings {
+    height: 100%;
+    width: 100%;
+}
