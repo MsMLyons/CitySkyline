@@ -1,3 +1,9 @@
+:root {
+    --building-color1: #aa80ff;
+    --building-color2: #66cc99;
+    --building-color3: #cc6699;
+}
+
 * {
     border: 1px solid black;
     box-sizing: border-box;
@@ -26,8 +32,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    --building-color1: #aa80ff;
-    --building-color2: #66cc99;
 }
 
 .bb1a {
@@ -63,6 +67,7 @@ body {
 .bb3 {
     height: 55%;
     width: 10%;
+    background-color: var(--building-color3, pink);
 }
 
 .bb4 {
