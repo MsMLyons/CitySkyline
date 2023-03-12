@@ -3,6 +3,7 @@
     --building-color2: #66cc99;
     --building-color3: #cc6699;
     --building-color4: #538cc6;
+    --window-color1: black;
 }
 
 * {
@@ -30,6 +31,14 @@ body {
     justify-content: space-evenly;
 }
 
+.bb1-window {
+    height: 10%;
+    background: linear-gradient(
+        var(--building-color1),
+        var(--window-color1)
+    );
+} 
+
 .bb1 {
     height: 70%;
     width: 10%;
@@ -38,22 +47,16 @@ body {
     align-items: center;
 }
 
-.bb1a {
-    height: 10%;
-    width: 70%;
-    background-color: var(--building-color1);
+.bb1a {    
+    width: 70%;        
 }
 
-.bb1b {
-    height: 10%;
-    width: 80%;
-    background-color: var(--building-color1);
+.bb1b {    
+    width: 80%;    
 }
 
 .bb1c {
-    height: 10%;
-    width: 90%;
-    background-color: var(--building-color1);
+    width: 90%;    
 }
 
 .bb1d {
@@ -83,29 +86,39 @@ body {
 .fb1 {
     height:60%;
     width: 10%;
+    background-color: var(--building-color4);
 }
 
 .fb2 {
     height: 40%;
     width: 10%;
+    background-color: var(--building-color3);
 }
 
 .fb3 {
     height: 35%;
     width: 10%;
+    background-color: var(--building-color1);
 }
 
 .fb4 {
     height: 45%;
     width: 8%;
+    background-color: var(--building-color1);
+    position: relative;
+    left: 10%;
 }
 
 .fb5 {
     height: 33%;
     width: 10%;
+    background-color: var(--building-color2);
+    position: relative;
+    right: 10%;
 }
 
 .fb6 {
     height: 38%;
     width: 9%;
+    background-color: var(--building-color3);
 }
