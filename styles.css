@@ -61,8 +61,8 @@ body {
 
 .bb1d {
     height: 70%;
-    width: 100%;
-    background-color: var(--building-color1, purple);
+    width: 100%;    
+    background: linear-gradient(var(--building-color1) 50%, var(--window-color1)); 
 }
 
 .bb2 {
