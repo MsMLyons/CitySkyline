@@ -10,7 +10,7 @@
 }
 
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
 }
 
@@ -44,6 +44,16 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.sky {
+    background: radial-gradient(
+        circle closest-corner at 15% 15%,
+        #ffcf33 0%,
+        #ffcf33 20%,
+        #ffff66 21%,
+        #bbeeff 100%
+    )
 }
 
 .bb1 {
@@ -252,7 +262,19 @@ body {
 .fb5 {
     height: 33%;
     width: 10%;
-    background-color: var(--building-color2);
+    background: repeating-linear-gradient(
+        var(--building-color2) 0%,
+        var(--building-color2) 5%,
+        transparent 5%,
+        transparent 10%
+    ),
+    repeating-linear-gradient(
+        90deg,
+        var(--building-color2) 0%,
+        var(--building-color2) 12%,
+        var(--window-color2) 12%,
+        var(--window-color2) 44%
+    );
     position: relative;
     right: 10%;
 }
@@ -260,5 +282,39 @@ body {
 .fb6 {
     height: 38%;
     width: 9%;
-    background-color: var(--building-color3);
+    background: repeating-linear-gradient(
+        90deg,
+        var(--building-color3) 0%,
+        var(--building-color3) 10%,
+        transparent 10%,
+        transparent 30%
+    ),
+        repeating-linear-gradient(
+        var(--building-color3) 0%,
+        var(--building-color3) 10%,
+        var(--window-color3) 10%,
+        var(--window-color3) 30%
+    );
+}
+
+@media (max-width: 1000px) {
+    :root {
+    --building-color1: #000;
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+    /* --window-color1: #777;
+    --window-color2: #777;
+    --window-color3: #777;
+    --window-color4: #777; */
+    }
+    .sky {
+        background: radial-gradient(
+            circle closest-corner at 15% 15%,
+            #ccc,
+            #ccc 20%,
+            #445 21%,
+            #223 100%
+        );
+    }
 }
