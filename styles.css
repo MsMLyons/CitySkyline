@@ -6,6 +6,7 @@
     --window-color1: black;
     --window-color2: #8cd9b3;
     --window-color3: #d98cb3;
+    --window-color4: #8cb3d9;
 }
 
 * {
@@ -33,20 +34,21 @@ body {
     justify-content: space-evenly;
 }
 
-.bb1-window {
-    height: 10%;
-    background: linear-gradient(
-        var(--building-color1),
-        var(--window-color1)
-    );
-} 
-
-.bb1 {
-    height: 70%;
-    width: 10%;
+.building-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.window-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bb1 {
+    height: 70%;
+    width: 10%;    
 }
 
 .bb1a {    
@@ -100,25 +102,91 @@ body {
 .bb3 {
     height: 55%;
     width: 10%;
-    background-color: var(--building-color3, pink);
+    background: repeating-linear-gradient(
+        90deg, 
+        var(--building-color3),
+        var(--building-color3),
+        var(--window-color3) 15%
+    );
 }
 
 .bb4 {
     height: 58%;
-    width: 11%;
-    background-color: var(--building-color4, blue);
+    width: 11%;   
+}
+
+.bb4a {
+    width: 3%;
+    height: 10%;
+    background-color: var(--building-color4);
+}
+
+.bb4b {
+    width: 80%;
+    height: 5%;
+    background-color: var(--building-color4);
+}
+
+.bb4c {
+    width: 100%;
+    height: 85%;
+    background-color: var(--building-color4);
+}
+
+.bb4-window {
+    width: 18%;
+    height: 90%;
+    background-color: var(--window-color4);
 }
 
 .fb1 {
     height:60%;
-    width: 10%;
+    width: 10%;    
+}
+
+.fb1a {
+    border-bottom: 7vh solid var(--building-color4);
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+}
+
+.fb1b {
+    width: 60%;
+    height: 10%;
     background-color: var(--building-color4);
+}
+
+.fb1c {
+    width: 100%;
+    height: 80%;
+    background: repeating-linear-gradient(
+        90deg, 
+        var(--building-color4) 0%,
+        var(--building-color4) 10%,
+        transparent 10%,
+        transparent 15%
+    ),
+    repeating-linear-gradient(           
+        var(--building-color4) 0%,
+        var(--building-color4) 10%,
+        var(--window-color4) 10%,
+        var(--window-color4) 90%
+    );
 }
 
 .fb2 {
     height: 40%;
     width: 10%;
     background-color: var(--building-color3);
+}
+
+.fb2a {
+    width: 100%;
+}
+
+.fb2b {
+    width: 100%;
+    height: 75%;
 }
 
 .fb3 {
